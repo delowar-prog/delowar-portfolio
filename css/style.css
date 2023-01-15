@@ -49,6 +49,7 @@ nav>ul>li{
     font-size: 35px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 30px;
 }
 /*Banner Section*/
 .banner{
@@ -67,7 +68,7 @@ nav>ul>li{
     margin: 20px 0;
 }
 .banner p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     color:#777;
 }
@@ -87,12 +88,11 @@ nav>ul>li{
     background-color: #FFF8F3;
     padding: 100px 130px;
     border-radius: 10px;
-    text-align: center;
 }
 .about>p{
-    font-size: 18px;
+    font-size:16px;
     color:#777;
-    line-height: 32px;
+    line-height: 30px;
     margin: 30px 0;
 }
 .about-info-container{
@@ -100,13 +100,13 @@ nav>ul>li{
     justify-content: space-around;
 }
 .info-title{
-    font-size: 20px;
+    font-size: 16px;
     color:#777;
 }
 .info-description{
-    font-size: 20px;
+    font-size: 14px;
+    color:orange;
     font-weight: bold;
-    color:#555;
 }
 /*what-i-do*/
 .what-i-do{
@@ -124,17 +124,21 @@ nav>ul>li{
     text-align: left;
     justify-content: space-around;
 }
-.exparties-info-container>article{
-    padding:30px;
-    margin: 0 20px;
-    box-shadow:10px 10px 30px #E9EBEC;
+.exparties-info-container>article {
+    flex:1;
+    padding: 10px;
+    margin: 0 10px;
+    box-shadow: 10px 10px 30px #E9EBEC;
 }
 .article-title{
     font-size: 20px;
     margin: 30px 0 20px 0;
 }
-article>p{
-    font-size: 16px;
+article img{
+    width: 50px;
+}
+article>ul{
+    font-size: 13px;
     color:#555;
     line-height: 28px;
 }
@@ -152,22 +156,28 @@ article>p{
     gap:20px;
     color:#474747;
 }
+.qualification div{
+    flex:1;
+}
 .qualification h3{
-    font-size: 30px;
+    font-size: 20px;
     margin: 30px 0;
 }
 .qualifi-title{
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 45px;
+}
+hr{
+    border: none;
 }
 .qualification-item{
 
 }
 .qualification-item h5{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .qualification-item>p{
 font-size: 16px;

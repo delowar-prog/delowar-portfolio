@@ -5,33 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
+    <nav>
+        <h3 class="logo"><span class="text-primary">D</span>elo<span class="text-primary">W</span>ar</h3>
+        <ul>
+            <li><a data-scroll href="#home">Home</a></li>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#skill">Skills</a></li>
+            <li><a data-scroll href="#resume">Resume</a></li>
+            <li><a data-scroll href="#portfolio">Portfolio</a></li>
+            <li><a data-scroll href="#contact">Contact</a></li>
+            <li><button class="btn-primary">Hire Me</button></li>
+        </ul>
+    </nav>
     <header class="header-style">
-        <nav>
-            <h3 class="logo"><span class="text-primary">D</span>elo<span class="text-primary">W</span>ar</h3>
-            <ul>
-                <li>Portfolio</li>
-                <li>Blog</li>
-                <li><button class="btn-primary">Hire Me</button></li>
-            </ul>
-        </nav>
-        <div class="banner">
+        <div class="banner" id="home">
             <div>
                 <h5>Hi, I am</h5>
                 <h2>Delowar Hossain</h2>
                 <p>I am very passionate about web development. I dream to be a professional developer and trying to the best to develop my coding skills. I beleve, as a hardworker person I will achieve my  goal in-sha-Allah. I am looking for an opportunity to work in a reputed company where I can contribute as collaborator to achieve company’s goal.</p>
                 <div style="margin-top: 30px;">
-                <button class="btn-primary">Download CV</button>
-                <button class="btn-primary-outline">Contact</button>
+                <a href="images/delowar-cv.pdf" target="_blank" class="btn-primary">Download CV</a>
+                <!-- <button class="btn-primary-outline">Contact</button> -->
                 </div>
             </div>
             <img src="images/photo.png" alt="">
         </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about"  id="about">
             <h3 class="section-title">About me</h3>
             <p>This is a person who sticks to a specific goal with extreme patience. I know that, Its not a easy in compitative job market, Thats why I am coutinously practice and trying to increase my coding knowledge day by day. But It would be easy for me, If I had a chance to work in a company as Junior Developer/Intern Developer. Already I have finished some courses on PHP with Laravel Fremwork, React JS. I also have completed some small projects as teaching purpose.</p>
             <div class="about-info-container">
@@ -47,11 +53,35 @@
                     <P class="info-title">Address</P>
                     <p class="info-description">Dhaka, Bangladesh</p>
                 </div>
+                <div class="info-item">
+                    <P class="info-title">Github</P>
+                    <p class="info-description">github.com/delowar-prog</p>
+                </div>
+                <div class="info-item">
+                    <P class="info-title">Phone</P>
+                    <p class="info-description">01738118208</p>
+                </div>
+                <div class="info-item">
+                    <P class="info-title">Portfolio</P>
+                    <p class="info-description">dhmilton.xyz</p>
+                </div>
             </div>
         </section>
-        <section class="what-i-do">
+        <section class="what-i-do"  id="skill">
             <h3 class="section-title">Coding Knowledge</h3>
             <div class="exparties-info-container">
+                <article>
+                    <img src="images/icons/css-boot.png" alt="Javascript Image">
+                    <h5 class="article-title">HTML-CSS-Bootstrap</h5>
+                    <ul>
+                        <li>Table, Form, Validation</li>
+                        <li>Flex, CSS Grid Layout</li>
+                        <li>Responsive Design</li>
+                        <li>Card, Carousal, Pagination</li>
+                        <li>Btn, navbar, Modal, Nav & Tabs</li>
+                        <li>Progress, Scrollspy, Spinners.</li>
+                    </ul>
+                </article>
                 <article>
                     <img src="images/icons/js.png" alt="Javascript Image">
                     <h5 class="article-title">Vanilla JavaScript</h5>
@@ -73,6 +103,17 @@
                         <li>Data Iteration</li>
                         <li>API</li>
                         <li>Authentication etc.</li>
+                    </ul>
+                </article>
+                <article>
+                    <img src="images/icons/php.svg" alt="Node Js">
+                    <h5 class="article-title">PHP</h5>
+                    <ul>
+                        <li>CRUD with Object Oriented PHP</li>
+                        <li>Object, Class, Propertice</li>
+                        <li>Include, Require, Superglobal Variable</li>
+                        <li>Method, Magic Method, Access Modifire</li>
+                        <li>Inheritance, Interface, Abstruct Class</li>                 
                     </ul>
                 </article>
                 <article>
@@ -99,7 +140,7 @@
                 </article>
             </div>
         </section>
-        <section class="resume">
+        <section class="resume" id="resume">
             <h3 class="section-title">A summary of My Resume</h3>
             <div class="qualification">
                 <div class="education">
@@ -140,9 +181,15 @@
                         </article>
                     </div>
                 </div>
-                <div class="experience">
+                <div class="courses">
                     <h3>Professional Courses</h3>
                     <div class="item-container">
+                        <article class="qualification-item">
+                            <h4 class="qualifi-title">React, Express & Node Js</h4>
+                            <h5>Jan-April, 2023 (Running)</h5>
+                            <p>Institute: Programming Hero</p>
+                            <hr>
+                        </article>
                         <article class="qualification-item">
                             <h4 class="qualifi-title">PHP with Laravel Fremwork</h4>
                             <h5>Oct-Dec, 2022 (240 Hours)</h5>
@@ -155,22 +202,42 @@
                             <p>Institute: BITM & People N-tech</p>
                             <hr>
                         </article>
-                        <article class="qualification-item">
-                            <h4 class="qualifi-title">React, Express & Node Js</h4>
-                            <h5>Jan-April, 2023 (Running)</h5>
-                            <p>Institute: Programming Hero</p>
-                            <hr>
-                        </article>
                     </div>
                 </div>
         </div>
-        <div style="text-align: center;">
-            <button class="btn-primary download-style">Download CV</button>
+        <div style="text-align: center; margin-top: 80px;">
+            <a href="images/delowar-cv.pdf" target="_blank" class="btn-primary">Download CV</a>
         </div>
         
         </section>
+        <!--Portfolio Section-->
+        <section class="portfolio" id="portfolio">
+            <h3 class="section-title">My Protfolios</h3>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="images/portfolios/action.png" alt="">
+                    <h3>Responsive Design</h3>
+                    <p>Using: HTML, CSS</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolios/airpod.png" alt="">
+                    <h3>Responsive Design</h3>
+                    <p>Using: HTML, CSS</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolios/drone.png" alt="">
+                    <h3>Responsive Design</h3>
+                    <p>Using: HTML, CSS</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolios/lights.png" alt="">
+                    <h3>Responsive Design</h3>
+                    <p>Using: HTML, CSS</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="social-media">
             <h3>Lets Connect</h3>
             <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
@@ -188,5 +255,41 @@
             <input class="btn-primary download-style" type="submit" value="Submit">
         </div>
     </footer>
+    <div id="gotoup"><i class="fa-solid fa-circle-up"></i></div> <!--Please see the css file-->
+
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/fontawesome.min.js"></script> -->
+          <!--for Scroll to top-->
+ <script>
+    jQuery(document).ready(function($) {
+    // Scroll to the desired section on click
+    // Make sure to add the `data-scroll` attribute to your `<a>` tag.
+    // Example: 
+    // `<a data-scroll href="#my-section">My Section</a>` will scroll to an element with the id of 'my-section'.
+    function scrollToSection(event) {
+    event.preventDefault();
+    var $section = $($(this).attr('href')); 
+    $('html, body').animate({
+        scrollTop: $section.offset().top
+    }, 1000);
+    }
+    $('[data-scroll]').on('click', scrollToSection);
+}(jQuery));
+</script>
+
+      <script>
+        $(window).scroll(function(){
+          if($(this).scrollTop()>300){
+            $("#gotoup").fadeIn();
+          }else{
+            $("#gotoup").fadeOut();
+          }
+        });
+        $("#gotoup").click(function(){
+          $("html, body").animate({scrollTop:0},500);
+        });
+      </script>
+      <!--stikey nav background set-->
 </body>
 </html>
